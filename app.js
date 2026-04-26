@@ -2,10 +2,12 @@ import { ejercicio1 } from './Ejercicios_Apropiacion/Ejercicio-1.js';
 import { ejercicio2 } from './Ejercicios_Apropiacion/Ejercicio-2.js';
 import { procesarPedido } from './Ejercicios_Apropiacion/Ejercicio-3.js';
 import { flujoDeDatos } from './Ejercicios_Apropiacion/Ejercicio-4.js';
+import { promesas } from './Ejercicios_Apropiacion/Ejercicio-5.js';
+import { promesas } from './Ejercicios_Apropiacion/Ejercicio-6.js';
 // Transferencia //
 import { gestionarCola } from './Ejercicio_Transferencia/Ejercicio-1-Tranferencia.js';
 import { gestionarEntregas } from './Ejercicio_Transferencia/Ejercicio-2-Tranferencia.js';
-
+import ventas from './Ejercicio_Transferencia/Ejercicio-4-Tranferencia.js';
 
 
 
