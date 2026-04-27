@@ -9,6 +9,7 @@ import { buscarUsuario, consultarPermisos, generarReporte } from './Ejercicios_A
 // Transferencia //
 import { gestionarCola } from './Ejercicio_Transferencia/Ejercicio-1-Tranferencia.js';
 import { gestionarEntregas } from './Ejercicio_Transferencia/Ejercicio-2-Tranferencia.js';
+import { validarTodo } from './Ejercicio_Transferencia/Ejercicio-3-Tranferencia.js';
 import ventas from './Ejercicio_Transferencia/Ejercicio-4-Tranferencia.js';
 import { procesarUsuario } from './Ejercicio_Transferencia/Ejercicio-5-Tranferencia.js';
 
@@ -47,3 +48,17 @@ versionPromesas().then(resultado => console.log(resultado));
   const resultado = await versionAsyncAwait();
   console.log(resultado);
 })();
+
+
+const misDatos = {
+    correo: "test@correo.com",
+    documento: "12345",
+    nombre: "Deivy"
+};
+
+// Ejecutamos y recibimos la respuesta
+validarTodo(misDatos).then((respuesta) => {
+    // La variable 'respuesta' ya tiene el objeto con los tiempos y estados
+    // Aquí podrías enviarlo a tu HTML o usarlo como necesites
+    return respuesta; 
+});
