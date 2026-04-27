@@ -1,18 +1,11 @@
-export function flujoDeDatos() {
-    // Proceso 1
+export const flujoCallbacks = (final) => {
     setTimeout(() => {
-        console.log("1. Datos tomados del servidor");
-        
-        // Proceso 2 (depende del 1)
+        const paso1 = "Datos tomados";
         setTimeout(() => {
-            console.log("2. Datos procesados y filtrados");
-            
-            // Proceso 3 (depende del 2)
+            const paso2 = `${paso1} -> Procesados`;
             setTimeout(() => {
-                console.log("3. Resultado mostrado en pantalla");
+                final(`${paso2} -> Resultado mostrado`);
             }, 1000);
-            
         }, 1000);
-        
     }, 1000);
-}
+};
